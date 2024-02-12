@@ -7,20 +7,22 @@ class LoginButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(vertical: 12),
-      width: double.infinity,
-      decoration: ShapeDecoration(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8),
+    return InkWell(
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 12),
+        width: double.infinity,
+        decoration: ShapeDecoration(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8),
+          ),
+          color: Colors.blue,
         ),
-        color: Colors.blue,
-      ),
-      alignment: Alignment.center,
-      child: const Text(
-        'Log in',
-        style: TextStyle(
-          fontSize: 16,
+        alignment: Alignment.center,
+        child: const Text(
+          'Log in',
+          style: TextStyle(
+            fontSize: 16,
+          ),
         ),
       ),
     );

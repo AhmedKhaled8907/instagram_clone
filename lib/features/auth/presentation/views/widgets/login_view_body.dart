@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'go_to_sign_up.dart';
 import 'login_button.dart';
 import 'logo_svg_picture.dart';
 import 'text_field_section.dart';
@@ -26,14 +27,10 @@ class LoginViewBody extends StatelessWidget {
 
           // login button
           const LoginButton(),
-          Flexible(flex: 2, child: Container()),
 
+          Flexible(flex: 2, child: Container()),
           // transtioning to sign up
-          const Row(
-            children: [
-              Text('data'),
-            ],
-          )
+          const GoToSignUp(),
         ],
       ),
     );
