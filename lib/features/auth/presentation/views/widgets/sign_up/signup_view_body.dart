@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_clone/features/auth/presentation/views/widgets/sign_up/go_to_login.dart';
-import 'package:instagram_clone/features/auth/presentation/views/widgets/sign_up/signup_text_field_section.dart';
 
-import '../login/login_button.dart';
-import '../logo_svg_picture.dart';
+import '../../../../../../core/utils/widgets/custom_button.dart';
+import '../../../../../../core/utils/widgets/logo_svg_picture.dart';
+import 'go_to_login.dart';
+import 'signup_text_field_section.dart';
 import 'user_image.dart';
 
 class SignUpViewBody extends StatelessWidget {
@@ -31,7 +31,10 @@ class SignUpViewBody extends StatelessWidget {
           const SizedBox(height: 16),
 
           // login button
-          const LoginButton(),
+          CustomButton(
+            onTap: () {},
+            text: 'Sign Up',
+          ),
 
           Flexible(flex: 2, child: Container()),
           // transtioning to log in

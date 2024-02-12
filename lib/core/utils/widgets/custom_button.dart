@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
-class LoginButton extends StatelessWidget {
-  const LoginButton({
-    super.key,
-  });
+class CustomButton extends StatelessWidget {
+  final String text;
+  final void Function() onTap;
+
+  const CustomButton({super.key, required this.text, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      onTap: onTap,
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 12),
         width: double.infinity,
@@ -18,9 +20,9 @@ class LoginButton extends StatelessWidget {
           color: Colors.blue,
         ),
         alignment: Alignment.center,
-        child: const Text(
-          'Log in',
-          style: TextStyle(
+        child: Text(
+          text,
+          style: const TextStyle(
             fontSize: 16,
           ),
         ),

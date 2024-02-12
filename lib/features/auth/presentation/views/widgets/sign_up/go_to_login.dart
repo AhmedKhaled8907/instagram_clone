@@ -24,7 +24,7 @@ class GoToLogin extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.symmetric(vertical: 8),
             child: const Text(
-              'login',
+              'Login',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 16,

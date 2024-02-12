@@ -24,6 +24,7 @@ class UserImage extends StatelessWidget {
               color: Colors.grey[900],
             ),
             child: IconButton(
+              alignment: Alignment.center,
               onPressed: () {},
               icon: const Icon(
                 Icons.add_a_photo,

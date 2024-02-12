@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'go_to_sign_up.dart';
-import 'login_button.dart';
-import '../logo_svg_picture.dart';
+import '../../../../../../core/utils/widgets/custom_button.dart';
+import '../../../../../../core/utils/widgets/logo_svg_picture.dart';
 import 'login_text_field_section.dart';
 
 class LoginViewBody extends StatelessWidget {
@@ -26,7 +26,10 @@ class LoginViewBody extends StatelessWidget {
           const SizedBox(height: 16),
 
           // login button
-          const LoginButton(),
+          CustomButton(
+            onTap: () {},
+            text: 'Login',
+          ),
 
           Flexible(flex: 2, child: Container()),
           // transtioning to sign up
@@ -35,5 +38,4 @@ class LoginViewBody extends StatelessWidget {
       ),
     );
   }
-  
 }
