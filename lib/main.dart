@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_clone/core/responsive/mobile_screen_layout.dart';
-import 'package:instagram_clone/core/responsive/responsive_layout.dart';
-import 'package:instagram_clone/core/responsive/web_screen_layout.dart';
 import 'package:instagram_clone/core/utils/colors.dart';
+import 'package:instagram_clone/features/auth/presentation/views/login_view.dart';
 import 'core/functions/firebase_initialize.dart';
 
 Future<void> main() async {
@@ -10,7 +8,6 @@ Future<void> main() async {
 
   runApp(const MyApp());
 }
-
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -23,10 +20,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: mobileBackgroundColor,
       ),
-      home: const ResponsiveLayout(
-        webScreenLayout: WebScreenLayout(),
-        mobileScreenLayout: MobileScreenLayout(),
-      ),
+      home:
+          //  const ResponsiveLayout(
+          //   webScreenLayout: WebScreenLayout(),
+          //   mobileScreenLayout: MobileScreenLayout(),
+          // ),
+          const LoginView(),
     );
   }
 }
