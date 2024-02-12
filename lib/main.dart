@@ -3,10 +3,14 @@ import 'package:instagram_clone/core/responsive/mobile_screen_layout.dart';
 import 'package:instagram_clone/core/responsive/responsive_layout.dart';
 import 'package:instagram_clone/core/responsive/web_screen_layout.dart';
 import 'package:instagram_clone/core/utils/colors.dart';
+import 'core/functions/firebase_initialize.dart';
 
-void main() {
+Future<void> main() async {
+  await firebaseInitialize();
+
   runApp(const MyApp());
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
