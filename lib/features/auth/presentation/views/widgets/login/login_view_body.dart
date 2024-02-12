@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'go_to_sign_up.dart';
 import 'login_button.dart';
-import 'logo_svg_picture.dart';
-import 'text_field_section.dart';
+import '../logo_svg_picture.dart';
+import 'login_text_field_section.dart';
 
 class LoginViewBody extends StatelessWidget {
   const LoginViewBody({super.key});
@@ -22,7 +22,7 @@ class LoginViewBody extends StatelessWidget {
           const LogoSvgPicture(),
           const SizedBox(height: 64),
           // text field section
-          const TextFieldSection(),
+          const LoginTextFieldSection(),
           const SizedBox(height: 16),
 
           // login button
@@ -35,4 +35,5 @@ class LoginViewBody extends StatelessWidget {
       ),
     );
   }
+  
 }

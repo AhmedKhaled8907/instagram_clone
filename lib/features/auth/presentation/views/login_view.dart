@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_clone/features/auth/presentation/views/widgets/login_view_body.dart';
+import 'package:instagram_clone/features/auth/presentation/views/widgets/login/login_view_body.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});

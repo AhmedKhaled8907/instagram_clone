@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/utils/widgets/custom_text_field.dart';
+import '../../../../../../core/utils/widgets/custom_text_field.dart';
 
-class TextFieldSection extends StatefulWidget {
-  const TextFieldSection({super.key});
+class LoginTextFieldSection extends StatefulWidget {
+  const LoginTextFieldSection({super.key});
 
   @override
-  State<TextFieldSection> createState() => TextFieldSectionState();
+  State<LoginTextFieldSection> createState() => LoginTextFieldSectionState();
 }
 
-class TextFieldSectionState extends State<TextFieldSection> {
+class LoginTextFieldSectionState extends State<LoginTextFieldSection> {
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
 
