@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_clone/core/responsive/mobile_screen_layout.dart';
+import 'package:instagram_clone/core/responsive/responsive_layout.dart';
+import 'package:instagram_clone/core/responsive/web_screen_layout.dart';
 import 'package:instagram_clone/core/utils/colors.dart';
 
 void main() {
@@ -16,8 +19,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: mobileBackgroundColor,
       ),
-      home: const Scaffold(
-        body: Center(child: Text('data')),
+      home: const ResponsiveLayout(
+        webScreenLayout: WebScreenLayout(),
+        mobileScreenLayout: MobileScreenLayout(),
       ),
     );
   }
