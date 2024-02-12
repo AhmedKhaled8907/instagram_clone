@@ -17,6 +17,7 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final inputBorder = OutlineInputBorder(
+      borderRadius: BorderRadius.circular(8),
       borderSide: Divider.createBorderSide(context),
     );
     return TextField(

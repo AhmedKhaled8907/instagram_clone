@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:instagram_clone/core/utils/colors.dart';
+
+import 'login_button.dart';
+import 'logo_svg_picture.dart';
+import 'text_field_section.dart';
 
 class LoginViewBody extends StatelessWidget {
   const LoginViewBody({super.key});
@@ -11,26 +13,27 @@ class LoginViewBody extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 30),
       width: double.infinity,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Flexible(flex: 2, child: Container()),
           // svg image
-          SvgPicture.asset(
-            'assets/images/instagram.svg',
-            colorFilter: const ColorFilter.mode(
-              primaryColor,
-              BlendMode.srcIn,
-            ),
-            height: 64,
-            width: double.infinity,
-          ),
+          const LogoSvgPicture(),
           const SizedBox(height: 64),
-          //text field for email
-          const SizedBox(height: 64),
+          // text field section
+          const TextFieldSection(),
+          const SizedBox(height: 16),
 
-          //text field for password
           // login button
+          const LoginButton(),
+          Flexible(flex: 2, child: Container()),
+
           // transtioning to sign up
+          const Row(
+            children: [
+              Text('data'),
+            ],
+          )
         ],
       ),
     );
