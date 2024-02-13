@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_clone/core/utils/colors.dart';
-import 'package:instagram_clone/features/auth/presentation/views/login_view.dart';
 import 'core/functions/firebase_initialize.dart';
+import 'features/splash/presentation/views/splash_view.dart';
 
 Future<void> main() async {
   await firebaseInitialize();
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
           //   webScreenLayout: WebScreenLayout(),
           //   mobileScreenLayout: MobileScreenLayout(),
           // ),
-          const LoginView(),
+          const SplashView(),
     );
   }
 }
