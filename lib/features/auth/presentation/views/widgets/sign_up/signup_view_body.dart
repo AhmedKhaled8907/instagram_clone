@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_clone/core/utils/widgets/logo_svg_picture.dart';
 
-import '../../../../../../core/utils/widgets/custom_button.dart';
-import '../../../../../../core/utils/widgets/logo_svg_picture.dart';
+import '../../../../../../core/widgets/custom_button.dart';
 import 'go_to_login.dart';
 import 'signup_text_field_section.dart';
 import 'user_image.dart';

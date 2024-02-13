@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_clone/core/utils/widgets/custom_text_field.dart';
 
-import '../../../../../../core/utils/widgets/custom_text_field.dart';
+
 
 class LoginTextFieldSection extends StatefulWidget {
   const LoginTextFieldSection({super.key});
