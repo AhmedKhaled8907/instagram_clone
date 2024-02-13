@@ -24,11 +24,11 @@ class SignUpViewBody extends StatelessWidget {
           const SizedBox(height: 64),
           // user image
           const UserImage(),
-          const SizedBox(height: 16),
+          const SizedBox(height: 24),
 
           // text field section
           const SignUpTextFieldSection(),
-          const SizedBox(height: 16),
+          const SizedBox(height: 24),
 
           // login button
           CustomButton(

@@ -23,7 +23,7 @@ class LoginViewBody extends StatelessWidget {
           const SizedBox(height: 64),
           // text field section
           const LoginTextFieldSection(),
-          const SizedBox(height: 16),
+          const SizedBox(height: 24),
 
           // login button
           CustomButton(

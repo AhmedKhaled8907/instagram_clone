@@ -27,10 +27,10 @@ class LoginTextFieldSectionState extends State<LoginTextFieldSection> {
         //text field for email
         CustomTextField(
           controller: emailController,
-          hintText: 'Enter your email address',
+          hintText: 'Enter your email',
           keyboardType: TextInputType.emailAddress,
         ),
-        const SizedBox(height: 16),
+        const SizedBox(height: 24),
 
         //text field for password
         CustomTextField(

@@ -32,7 +32,7 @@ class LoginTextFieldSectionState extends State<SignUpTextFieldSection> {
           hintText: 'Enter your user name',
           keyboardType: TextInputType.text,
         ),
-        const SizedBox(height: 16),
+        const SizedBox(height: 24),
 
         //text field for email
         CustomTextField(
@@ -40,7 +40,7 @@ class LoginTextFieldSectionState extends State<SignUpTextFieldSection> {
           hintText: 'Enter your email address',
           keyboardType: TextInputType.emailAddress,
         ),
-        const SizedBox(height: 16),
+        const SizedBox(height: 24),
 
         //text field for password
         CustomTextField(
@@ -49,7 +49,7 @@ class LoginTextFieldSectionState extends State<SignUpTextFieldSection> {
           keyboardType: TextInputType.emailAddress,
           isPass: true,
         ),
-        const SizedBox(height: 16),
+        const SizedBox(height: 24),
 
         //text field for email
         CustomTextField(

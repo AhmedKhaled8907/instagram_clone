@@ -18,7 +18,7 @@ class CustomTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     final inputBorder = OutlineInputBorder(
       borderRadius: BorderRadius.circular(8),
-      borderSide: Divider.createBorderSide(context),
+      borderSide: BorderSide(color: Colors.grey.shade900),
     );
     return TextField(
       controller: controller,
@@ -29,6 +29,7 @@ class CustomTextField extends StatelessWidget {
         focusedBorder: inputBorder,
         enabledBorder: inputBorder,
         filled: true,
+        fillColor: Colors.grey[900],
       ),
       keyboardType: keyboardType,
       obscureText: isPass,
