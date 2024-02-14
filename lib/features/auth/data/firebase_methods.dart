@@ -47,4 +47,25 @@ class FirebaseMethods {
     }
     return res;
   }
+
+  Future<String> signInUser({
+    required String email,
+    required String password,
+  }) async {
+    String res = 'Some errro occurred';
+    try {
+      if (email.isNotEmpty || password.isNotEmpty) {
+        await _auth.signInWithEmailAndPassword(
+          email: email,
+          password: password,
+        );
+        res = 'success';
+      } else {
+        res = 'Please enter all the fields';
+      }
+    } on Exception catch (e) {
+      res = e.toString();
+    }
+    return res;
+  }
 }

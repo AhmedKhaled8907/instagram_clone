@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_clone/core/utils/widgets/logo_svg_picture.dart';
 
-import '../../../../../../core/utils/widgets/custom_button.dart';
 import 'go_to_sign_up.dart';
 
 import 'login_text_field_section.dart';
@@ -24,13 +23,7 @@ class LoginViewBody extends StatelessWidget {
           const SizedBox(height: 64),
           // text field section
           const LoginTextFieldSection(),
-          const SizedBox(height: 24),
-
-          // login button
-          CustomButton(
-            onTap: () {},
-            text: 'Login',
-          ),
+          
 
           Flexible(flex: 2, child: Container()),
           // transtioning to sign up
